@@ -12,3 +12,14 @@ pyttsx3 is a text-to-speech conversion library in Python. Unlike alternative lib
   pip install pyttsx3
 ```
 If you recieve errors such as ``` No module named win32com.client```, ```No module named win32```, or ```No module named win32api```, you will need to additionally install ```pypiwin32```.
+
+
+
+## Usage
+
+```bash
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("I will speak this text")
+engine.runAndWait()
+```
